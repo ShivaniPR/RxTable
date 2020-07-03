@@ -19,7 +19,6 @@ extension MySection : SectionModelType {
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     let tableView = UITableView()
-    var dataSource: RxTableViewSectionedReloadDataSource<MySection>?
     let sections = [
         MySection(header: "First section", items: [
             1,
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.translatesAutoresizingMaskIntoConstraints = true
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -41,9 +40,9 @@ class ViewController: UIViewController {
             tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
-        display()
+        displayCellContent()
     }
-    func display(){
+    func displayCellContent(){
         let dataSource = RxTableViewSectionedReloadDataSource<MySection>(
             configureCell: { ds, tv, indexPath, item in
                 let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
