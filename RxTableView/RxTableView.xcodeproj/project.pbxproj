@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		29417EE624AEF06B00082A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29417EE424AEF06B00082A77 /* Main.storyboard */; };
 		29417EE824AEF06E00082A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29417EE724AEF06E00082A77 /* Assets.xcassets */; };
 		29417EEB24AEF06E00082A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29417EE924AEF06E00082A77 /* LaunchScreen.storyboard */; };
+		29417EF324AEF9B600082A77 /* MySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29417EF224AEF9B600082A77 /* MySection.swift */; };
 		D28C02AA78AAAA459FB50A70 /* Pods_RxTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43774F8ADB4B0CAC68F9BB1A /* Pods_RxTableView.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		29417EE724AEF06E00082A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29417EEA24AEF06E00082A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29417EEC24AEF06E00082A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29417EF224AEF9B600082A77 /* MySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySection.swift; sourceTree = "<group>"; };
 		43774F8ADB4B0CAC68F9BB1A /* Pods_RxTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80324038D2136277C5EC0510 /* Pods-RxTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTableView.debug.xcconfig"; path = "Target Support Files/Pods-RxTableView/Pods-RxTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				29417EDE24AEF06B00082A77 /* AppDelegate.swift */,
 				29417EE024AEF06B00082A77 /* SceneDelegate.swift */,
 				29417EE224AEF06B00082A77 /* ViewController.swift */,
+				29417EF224AEF9B600082A77 /* MySection.swift */,
 				29417EE424AEF06B00082A77 /* Main.storyboard */,
 				29417EE724AEF06E00082A77 /* Assets.xcassets */,
 				29417EE924AEF06E00082A77 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				80324038D2136277C5EC0510 /* Pods-RxTableView.debug.xcconfig */,
 				1C053F4261CDB2C1FBC960A3 /* Pods-RxTableView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29417EE324AEF06B00082A77 /* ViewController.swift in Sources */,
+				29417EF324AEF9B600082A77 /* MySection.swift in Sources */,
 				29417EDF24AEF06B00082A77 /* AppDelegate.swift in Sources */,
 				29417EE124AEF06B00082A77 /* SceneDelegate.swift in Sources */,
 			);
