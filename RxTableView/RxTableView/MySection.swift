@@ -1,4 +1,4 @@
 struct MySection {
-    var header: String
+//    var header: String
     var items: [Item]
 }
