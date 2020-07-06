@@ -18,13 +18,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.register(UICollectionViewCell.self , forCellWithReuseIdentifier: "cell")
+        cv.register(UICollectionViewCell.self , forCellWithReuseIdentifier: "Cell")
         return cv
     }()
     let sections = [
         MySection(items: [
             1,
-            2
+            2,
+            3,
+            4
         ])
     ]
 
@@ -42,10 +44,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     }
     func disp(){
-        print("dispdhvcdhbc")
         let dataSource = RxCollectionViewSectionedReloadDataSource<MySection>(
               configureCell: { dataSource, cv, indexPath, item in
-                let cell = cv.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! NumberDisplay
+                let cell = cv.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
                 cell.backgroundColor = .blue
                 return cell
         })
